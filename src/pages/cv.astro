@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am an experienced professional with over 10 years of experience in the IT
+    world, specializing particularly in web programming
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelor's degree in Computer Engineering and Computer Science"
+      subtitle="2011 to 2015 at State University of Makassar"
+    />
+    <!-- <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    /> -->
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Chief Executive Officer (CEO)"
+      subtitle="From 2018 to present at PT. Magau Jaya Digital"
+    />
+    <TimeLineElement
+      title="Telkomsel Regional Makassar Business Process Outsourcing (BPO)"
+      subtitle="From 2018 to 2023 at PT. Infomedia Nusantara"
+    />
+    <TimeLineElement
+      title="IT Engineer & Web Developer"
+      subtitle="From 2016 to 2018 at Magau Group"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>2017 - Web App Security Workshop</li>
+    <li>2021 - Vue.js on Steroids</li>
+    <li>2021 - Assessor of Competency BNSP</li>
+    <li>2022 - KKNI Lv. 4 Bidang Pelatihan</li>
+    <li>2024 - Training of Trainers Junior Web Developer</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>PHP</li>
+    <li>JavaScript</li>
+    <li>Node.js</li>
+    <li>Express.js</li>
+    <li>Vue.js</li>
+    <li>React.js</li>
+    <li>MySQL</li>
+    <li>PostgreeSQL</li>
+  </ul>
+</BaseLayout>
